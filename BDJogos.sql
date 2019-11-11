@@ -67,7 +67,7 @@ Data_Aluguel date not null);
 create table Funcionario(
 idFuncionario int primary key not null auto_increment,
 Pessoa_idPessoa int not null,
-Sexo char(1) check (upper(seco)='M' or upper(sexo)='F'),
+Sexo char(1) check (upper(sexo)='M' or upper(sexo)='F'),
 Idade int not null);
 
 alter table Cliente
